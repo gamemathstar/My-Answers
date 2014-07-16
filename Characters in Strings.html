@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title>
+			Characters in Strings
+		</title>
+		<script>
+			function find_chars(string1, string2){
+				finalString = "";
+				for ( i = 0; i < string1.length; i++) {
+					for ( j = 0; j < string2.length; j++) {
+						if (string1.charAt(i) == string2.charAt(j)) {
+							finalString += string1.charAt(i);
+							break;
+						}
+					}
+				}
+				return finalString;
+			}
+			
+			alert(find_chars("keep","Bookkeeping"));
+		</script>
+	</head>
+	<body>
+		<span id="bb"></span>
+
+	</body>
+</html>

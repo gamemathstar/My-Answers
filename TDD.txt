@@ -1,0 +1,46 @@
+TDD meaning Test-driven development is a application or software design process which s based on repetition of a short development cycle.There
+are a hand full of steps.
+
+
+1.Add a Test:In more traditional software development methodology, the focus is on writing code first and 
+then test it afterwards. Test Driven Development intends to throw that order out of the window; developers are expected
+ to write a test first, run the test and then write more code.
+
+
+
+2.Write enough code to fail the (first) test – As outlined in below diagram (Fig. 1), the idea is that when testing a 
+‘first development’ you write a quick first test and make it pass with the simplest change to the production code as 
+possible (this is often referred to ‘test first development’ or ‘TFD’).
+
+
+
+Subsequent code updates and testing (1) – The outcome of a test is either ‘red’ or ‘green’. Depending on the result of 
+the test, you then make a little change in the code (refactoring) and run the test again. If a test has passed (i.e. shows
+ as ‘green’) you can refactor from a green test to another green test. Following a refactor, if all tests are green, you then
+ right your next failing test. A commonly used formula to represent this approach is: TDD = refactoring + TFD. 
+
+
+
+Subsequent code updates and testing (2) - What it effectively comes down to is a continuous cycle of writing a failing test 
+(‘red’), making it pass (‘green’), move to the next failing test and then change the code of this test (refactor) to make it 
+pass (see Fig. 2 below).  
+
+
+
+It’s about testing, not about writing specs! - I guess the main thing to stress is that TDD is NOT about writing detailed 
+specifications. However, I spend quite a bit of time working with business stakeholders to specify scenarios on how a system 
+is expected to work. This helps in creating a shared understanding of how functionality is (or isn’t) going to work, but – again
+ – is not about capturing the scope of the functionality in painstaking detail, it is much more about driving the architecture 
+ of the code.
+
+
+
+Acceptance testing to prevent new software bugs - If you are a developer, the main aim is to write and run continuous tests to 
+uncover any new – functional and non-functional – bugs and see if any changes or enhancements made resulted in faults or bugs.
+
+
+
+It’s a collaborative process – TDD specialist Gojko Adzic stresses the collaborative nature of TDD. The number of people that 
+actually need to be involved depends very much on the nature of the product. For instance, if you are working on a new product
+ or feature then it would be a good idea to have regular small workshops with the “Three Amigos”; a developer, a tester and a 
+ business analyst.  In contrast, when the product is more mature it might just be a case of pairing two developers to work on it.
